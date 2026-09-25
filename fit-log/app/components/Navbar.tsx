@@ -10,7 +10,7 @@ const Navbar = () => {
     const isMyPlanActive = pathname === "/my-plan";
 
     return (
-        <nav className="border-b border-white/10 bg-[#08090b] text-white">
+        <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#08090b] text-white">
             <div className="mx-auto flex min-h-18 max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-5 md:px-8">
 
                 {/*Logo*/}

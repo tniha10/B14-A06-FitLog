@@ -18,11 +18,16 @@ export const metadata: Metadata = {
   description: "Working Library",
 };
 
-export default function RootLayout({ children }: Readonly<{children: RecordingState.ReactNode;}>) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html
-      lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         <Navbar />
 
         {children}
