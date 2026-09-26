@@ -1,13 +1,11 @@
 import Banner from "./components/Banner";
+import Library from "./components/Library";
 
 export default function Home() {
   return (
     <main>
       <Banner />
-
-      <section id="library" className="min-h-screen bg-white">
-        {/* Library section will be added later */}
-      </section>
+      <Library />
     </main>
   );
 }
