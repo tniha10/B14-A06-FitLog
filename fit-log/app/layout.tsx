@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
 import Navbar from "./components/Navbar";
 import { FitLogProvider } from "./context/FitLogContext";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
     title: "FitLog",
@@ -20,6 +20,7 @@ export default function RootLayout({
                 <FitLogProvider>
                     <Navbar />
                     {children}
+                    <Footer />
                 </FitLogProvider>
             </body>
         </html>
